@@ -1,0 +1,16 @@
+<svg viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @keyframes glow {
+    0%, 100% { stroke: rgba(30, 58, 115, 0.4); stroke-width: 10; }
+    50% { stroke: rgba(0, 159, 253, 0.4); stroke-width: 14; }
+    }
+
+    .glow {
+    animation: glow 2s ease-in-out infinite;
+    }
+  </style>
+
+  <circle cx="100" cy="100" r="80" fill="none" stroke="cyan" stroke-width="10" class="glow" />
+  <circle cx="100" cy="100" r="20" fill="rgba(30, 58, 115, 0.5)" class="glow" />
+  <line x1="20" y1="100" x2="180" y2="100" stroke="cyan" stroke-width="10" class="glow" />
+</svg>

@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'pokemon-solid';
+    src: url('/fonts/pokemon/Pokemon Solid.ttf');
+}
+
+@font-face {
+    font-family: 'pokemon-hollow';
+    src: url('/fonts/pokemon/Pokemon Hollow.ttf');
+}
+
+@font-face {
+    font-family: 'akira';
+    src: url('/fonts/akira/Akira Expanded Demo.otf') format("opentype");
+}
+
+*{
+    font-family: 'akira';
+}

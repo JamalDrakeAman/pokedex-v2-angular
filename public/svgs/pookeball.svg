@@ -1,0 +1,26 @@
+<svg viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+          }
+      
+          @keyframes pulse {
+            0%, 100% { r: 20; }
+            50% { r: 24; }
+          }
+      
+          .outer {
+            animation: rotate 5s linear infinite;
+            transform-origin: center;
+          }
+      
+          .inner {
+            animation: pulse 2s ease-in-out infinite;
+          }
+        </style>
+      
+        <circle cx="100" cy="100" r="80" fill="none" stroke="black" stroke-width="10" class="outer"/>
+        <circle cx="100" cy="100" r="20" fill="black" class="inner"/>
+        <line x1="20" y1="100" x2="180" y2="100" stroke="black" stroke-width="10"/>
+      </svg>

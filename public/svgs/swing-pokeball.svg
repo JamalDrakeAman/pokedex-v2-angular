@@ -1,0 +1,19 @@
+ <svg viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <style>
+          @keyframes swing {
+            0%, 100% { transform: rotate(-20deg); }
+            50% { transform: rotate(20deg); }
+          }
+      
+          .swing {
+            animation: swing 5s ease-in-out infinite alternate;
+            transform-origin: center;
+          }
+        </style>
+      
+        <g class="swing">
+          <circle cx="100" cy="100" r="80" fill="none" stroke="black" stroke-width="10"/>
+          <circle cx="100" cy="100" r="20" fill="black"/>
+          <line x1="20" y1="100" x2="180" y2="100" stroke="black" stroke-width="10"/>
+        </g>
+      </svg>
