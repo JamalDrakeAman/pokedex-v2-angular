@@ -18,7 +18,6 @@ export class LandingPageComponent implements OnInit {
 
   public pokeService = inject(PokemonService);
 
-  // pokemonData: any[] = [];
 
   constructor() { }
 
@@ -30,19 +29,6 @@ export class LandingPageComponent implements OnInit {
   loadMore() {
     this.pokeService.loadPokemonData();
   }
-
-
-  // loadPokemonData() {
-  //   this.pokeService.fetchDetails().subscribe({
-  //     next: (response) => {
-  //       this.pokemonData = response.results; // Daten zuweisen
-  //       console.log('Geladene Pokemon:', this.pokemonData); // Korrekt ausloggen
-  //     },
-  //     error: (err) => {
-  //       console.error('Fehler beim Laden:', err);
-  //     },
-  //   });
-  // }
 
 
 }

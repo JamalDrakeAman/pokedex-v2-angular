@@ -1,4 +1,4 @@
-.my-sidebar {
+.poke-sidebar {
     position: absolute;
     z-index: 1;
     right: 0;
@@ -6,6 +6,10 @@
     color: rgba(30, 58, 115, 0.5);
     height: 100%;
     width: 310px;
+}
+
+.hide-sidebar{
+    right: -310px;
 }
 
 

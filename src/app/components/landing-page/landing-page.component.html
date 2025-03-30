@@ -1,28 +1,20 @@
 <section>
 
-  <div class="container"></div>
+  <!-- <div class="container"></div> -->
 
-  <div class="">
-    <div class="min-h-[calc(100dvh-80px)] flex items-center justify-center flex-wrap gap-4 p-4 relative">
+  <div class="pr-[300px] flex flex-col items-center">
+
+    <div class="grid grid-cols-2 gap-4 p-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
       @for (pokemon of pokeService.pokemonData; track $index) {
-
-      <!-- <div class="card card-image-cover">
-      <img src="https://source.unsplash.com/random/300x200" alt="" />
-      <div class="card-body">
-        <h2 class="card-header">{{pokemon.name}}</h2>
-
-        <div class="card-footer">
-          <button class="btn-secondary btn">See More</button>
-        </div>
-      </div>
-    </div> -->
 
       <app-poke-grid [pokeData]="pokemon"></app-poke-grid>
       }
     </div>
 
-    <button (click)="loadMore()" class="self-center">
-      Load More
+  
+
+    <button (click)="loadMore()" class="mb-10 beautiful-button">
+      Load More...
     </button>
 
   </div>
