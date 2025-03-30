@@ -1,12 +1,12 @@
-<section class="container bg">
+<section>
 
-</section>
+  <div class="container"></div>
 
-<section class="pr-[25%]">
-  <div class="min-h-[calc(100dvh-80px)] flex items-center justify-center flex-wrap gap-4 p-4 relative">
-    @for (pokemon of pokeService.pokemonData; track $index) {
+  <div class="">
+    <div class="min-h-[calc(100dvh-80px)] flex items-center justify-center flex-wrap gap-4 p-4 relative">
+      @for (pokemon of pokeService.pokemonData; track $index) {
 
-    <!-- <div class="card card-image-cover">
+      <!-- <div class="card card-image-cover">
       <img src="https://source.unsplash.com/random/300x200" alt="" />
       <div class="card-body">
         <h2 class="card-header">{{pokemon.name}}</h2>
@@ -17,12 +17,15 @@
       </div>
     </div> -->
 
-    <app-poke-grid [pokeData]="pokemon"></app-poke-grid>
-    }
+      <app-poke-grid [pokeData]="pokemon"></app-poke-grid>
+      }
+    </div>
+
+    <button (click)="loadMore()" class="self-center">
+      Load More
+    </button>
+
   </div>
 
-  <button (click)="loadMore()" class="self-center">
-    Load More
-  </button>
 
 </section>

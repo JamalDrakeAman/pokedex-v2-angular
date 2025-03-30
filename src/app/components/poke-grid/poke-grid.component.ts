@@ -17,6 +17,9 @@ export class PokeGridComponent {
     name: '',
     url: ''
   }
+
+
+  
   
 
 }
