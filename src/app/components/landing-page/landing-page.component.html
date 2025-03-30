@@ -1,10 +1,10 @@
-<section>
+<section class="w-[100%]">
 
   <!-- <div class="container"></div> -->
 
-  <div class="pr-[300px] flex flex-col items-center">
+  <div class="pr-[300px] flex flex-col items-center w-[100%]">
 
-    <div class="grid grid-cols-2 gap-4 p-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+    <div class="grid grid-cols-3 gap-4">
       @for (pokemon of pokeService.pokemonData; track $index) {
 
       <app-poke-grid [pokeData]="pokemon"></app-poke-grid>

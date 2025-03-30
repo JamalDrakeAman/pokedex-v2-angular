@@ -22,6 +22,7 @@ export class PokeGridComponent implements OnInit {
   }
 
   isLoading = true;
+  imageLoaded = true;
 
   pokemonData: any = {}
 
