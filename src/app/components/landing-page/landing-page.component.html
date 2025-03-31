@@ -2,7 +2,8 @@
 
   <!-- <div class="container"></div> -->
 
-  <div class="pr-[300px] flex flex-col items-center w-[100%]">
+  <div [ngClass]="{'sidebarPlace':sidebarState.isSidebarOpen() }"
+    class="flex flex-col items-center w-[100%] transition-all ease-in-out duration-250">
 
     <div class="grid grid-cols-3 gap-4">
       @for (pokemon of pokeService.pokemonData; track $index) {
@@ -10,8 +11,6 @@
       <app-poke-grid [pokeData]="pokemon"></app-poke-grid>
       }
     </div>
-
-  
 
     <button (click)="loadMore()" class="mb-10 beautiful-button">
       Load More...

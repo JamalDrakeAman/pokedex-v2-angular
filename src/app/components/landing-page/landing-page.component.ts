@@ -2,6 +2,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PokemonService } from '../../shared/pokemon.service';
 import { PokeGridComponent } from '../poke-grid/poke-grid.component';
+import { SidebarStateService } from '../../shared/sidebar-state.service';
 
 
 @Component({
@@ -19,7 +20,7 @@ export class LandingPageComponent implements OnInit {
   public pokeService = inject(PokemonService);
 
 
-  constructor() { }
+  constructor(public sidebarState: SidebarStateService) { }
 
   ngOnInit(): void {
     this.pokeService.loadPokemonData();

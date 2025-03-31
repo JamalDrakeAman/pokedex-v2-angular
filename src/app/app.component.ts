@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./components/header/header.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
+import { CommonModule } from '@angular/common';
+import { SidebarStateService } from './shared/sidebar-state.service';
 
 
 @Component({
@@ -12,12 +14,15 @@ import { SidebarComponent } from "./components/sidebar/sidebar.component";
     RouterOutlet,
     HeaderComponent,
     FooterComponent,
-    SidebarComponent
-],
+    SidebarComponent,
+    CommonModule
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'pokedex-angular';
+
+  constructor(public sidebarState: SidebarStateService ) { }
 
 }

@@ -6,10 +6,15 @@
     color: rgba(30, 58, 115, 0.5);
     height: 100%;
     width: 310px;
+    transition: all ease-in-out 250ms;
 }
 
 .hide-sidebar{
     right: -310px;
+}
+
+.show-sidebar{
+    right: 0;
 }
 
 

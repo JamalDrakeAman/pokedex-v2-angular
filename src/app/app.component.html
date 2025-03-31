@@ -7,7 +7,7 @@
     <div class="blur-container"></div>
 
     <div class="overflow-hidden max-wrapper">
-        <app-sidebar class="poke-sidebar"></app-sidebar>
+        <app-sidebar [ngClass]="sidebarState.isSidebarOpen() ? 'show-sidebar' : 'hide-sidebar' " class="poke-sidebar"></app-sidebar>
         <router-outlet class="pr-80"></router-outlet>
     </div>
 
