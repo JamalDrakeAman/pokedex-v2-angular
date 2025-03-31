@@ -5,7 +5,7 @@
   <div [ngClass]="{'sidebarPlace':sidebarState.isSidebarOpen() }"
     class="flex flex-col items-center w-[100%] transition-all ease-in-out duration-250">
 
-    <div class="grid grid-cols-3 gap-4">
+    <div class="grid gap-3 2xl:grid-cols-4 sm:grid-cols-2 xl:grid-cols-3">
       @for (pokemon of pokeService.pokemonData; track $index) {
 
       <app-poke-grid [pokeData]="pokemon"></app-poke-grid>
